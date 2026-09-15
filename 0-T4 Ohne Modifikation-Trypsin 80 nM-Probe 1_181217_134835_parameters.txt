@@ -1,0 +1,29 @@
+Parameter Summary:
+  points_per_side: 64
+  points_per_batch: 128
+  pred_iou_thresh: 0.8
+  stability_score_thresh: 0.85
+  stability_score_offset: 0.7
+  crop_n_layers: 1
+  box_nms_thresh: 0.5
+  crop_n_points_downscale_factor: 2
+  min_mask_region_area: 10.0
+  use_m2m: False
+
+Generated 87 masks
+
+Comparison Parameter Sets:
+
+Aggressive Parameters:
+  points_per_side: 96
+  pred_iou_thresh: 0.7
+  stability_score_thresh: 0.8
+  min_mask_region_area: 5.0
+  use_m2m: True
+
+Balanced Parameters:
+  points_per_side: 64
+  pred_iou_thresh: 0.75
+  stability_score_thresh: 0.82
+  min_mask_region_area: 8.0
+  use_m2m: True

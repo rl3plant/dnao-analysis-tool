@@ -1,0 +1,119 @@
+# Project-specific ignores
+models/
+logs/
+uploads/
+client_old
+appearances/
+data/
+output/
+src/server/.server_env/
+archive/
+
+# Experiment/run artifacts
+runs/
+wandb/
+checkpoints/
+**/checkpoints/
+
+# Model files (typically large)
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+*.ckpt
+
+# Array/data blobs
+*.npy
+*.npz
+
+# Image files in root directory
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.webp
+
+# Benchmarking outputs and run artifacts
+benchmarking/runs/
+benchmarking/results/
+benchmarking/**/weights/
+benchmarking/**/runs/
+
+# Slurm output logs
+*.out
+*.err
+benchmarking/*.out
+benchmarking/*.err
+
+# Large/raw data formats not needed in repo
+*.spm
+
+# Notebook checkpoints and caches
+**/.ipynb_checkpoints/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+.coverage
+htmlcov/
+.cache/
+*.cache
+*.cache/
+
+# Benchmarking folder - exclude images but keep other files
+benchmarking/**/*.png
+benchmarking/**/*.jpg
+benchmarking/**/*.jpeg
+benchmarking/**/*.gif
+benchmarking/**/*.bmp
+benchmarking/**/*.tiff
+benchmarking/**/*.svg
+benchmarking/**/*.webp
+
+# Python related
+__pycache__/
+*.py[cod]
+*$py.clasDNAO-Analysis-Tools
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+
+# IDE related
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS related
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

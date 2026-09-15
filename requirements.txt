@@ -1,0 +1,21 @@
+# Segmentation runs in-process via neo_toolkit.segmentation now (see
+# src/client/local_sam_service.py) -- no more Flask server / `requests`.
+# Install neo-toolkit itself (brings numpy/opencv/torch/sam2 transitively);
+# either check it out as a sibling directory (default, no install needed --
+# see src/client/utils/neo_toolkit_bootstrap.py) or uncomment the line below
+# for a proper editable install:
+# -e ../neo-toolkit
+
+PySide6>=6.5.0    # GUI -- was actually required before too, just missing here
+scikit-learn>=1.0.0
+opencv-python>=4.5.0
+joblib>=1.0.0
+pyefd>=1.5.0
+
+# Only needed if neo-toolkit isn't already installed as a sibling checkout:
+numpy>=1.26
+torch>=2.2
+sam2
+
+# Dev/test only:
+pytest>=7.0.0

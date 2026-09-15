@@ -1,0 +1,8 @@
+  <widget class="QPushButton" name="btn_toggle_annotations">
+   <property name="text">
+    <string>Hide Annotations</string>
+   </property>
+   <property name="toolTip">
+    <string>Toggle annotation visibility (T)</string>
+   </property>
+  </widget> 
