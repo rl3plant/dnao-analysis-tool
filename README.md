@@ -21,3 +21,9 @@ See `setup.sh`/`requirements.txt` for manual install steps.
 ```bash
 pytest tests/
 ```
+
+## Thesis
+
+Plantosar, P. A. (2025). *Human-in-the-loop few-shot annotation of DNA
+origami in AFM images* (Master's thesis, Graz University of Technology).
+https://doi.org/10.3217/znfkz-dzt57
